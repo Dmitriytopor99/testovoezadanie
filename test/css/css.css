@@ -30,3 +30,15 @@ th{
 #btnCreate:hover{
     background-color: #1b6d85;
 }
+#form{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content:center;
+}
+#edit{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content:center;
+}
