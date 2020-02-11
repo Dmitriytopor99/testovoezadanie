@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Таблица тендеров</title>
+    <script src="js/tender.js"></script>
+    <script src="js/mngTender.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+</head>
+<body>
+<table>
+    <caption>Доступные тендеры</caption>
+    <tr>
+        <th>ID</th>
+        <th>Дата создания</th>
+        <th>Название</th>
+        <th>Код</th>
+        <th>Год</th>
+        <th colspan="2">Действие</th>
+    </tr>
+    <?php foreach($this->data as $tender):?>
+    <tr id="<?= $tender['id'];?>"><td><?= $tender['id'];?></td><td><?= $tender['date'];?>
+    </td><td><?= $tender['title'];?></td><td><?= $tender['code'];?>
+    </td><td><?= $tender['year'];?></td>
+    <td class="btnEdit">Изменить</td><td class="btnDel">Удалить</td></tr>
+    <?php endforeach; ?>
+    <tr>
+        <th id="btnCreate" colspan="7">Добавить тендер.</th>
+    </tr>
+</table>
+</body>
+</html>

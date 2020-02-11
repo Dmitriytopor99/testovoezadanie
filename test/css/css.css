@@ -1,0 +1,32 @@
+table{
+    border-spacing: 20px 20px;
+    margin: 100px auto;
+}
+caption {
+    background: aqua;
+}
+tr{
+    background: #b9def0;
+}
+#btnCreate{
+    background: #c3e6cb;
+    cursor: pointer
+}
+th{
+    background: #58acf2;
+}
+.btnEdit,.btnDel,.btnShow{
+    cursor: pointer;
+}
+.btnShow:hover{
+    background-color: #1b6d85;
+}
+.btnDel:hover{
+    background-color: #1b6d85;
+}
+.btnEdit:hover{
+    background-color: #1b6d85;
+}
+#btnCreate:hover{
+    background-color: #1b6d85;
+}
