@@ -12,7 +12,7 @@ class mngTender{
                            //редактирование записи
     static editTnd(e){
         let id = e.target.parentNode.id;
-        let input = '<div id="edit"><textarea rows="10" cols="45" name="text"></textarea><textarea rows="10" cols="45" name="code"></textarea><button id="update">Обновить</button></div>';
+        let input = '<div id="edit"><textarea rows="10" cols="45" name="text" placeholder="Ведите новое название"></textarea><textarea rows="10" cols="45" name="code" placeholder="Ведите новый код"></textarea><button id="update">Обновить</button></div>';
         let insr = document.getElementsByTagName('body')[0];
         insr.insertAdjacentHTML('beforeend',input);
         let btn = document.getElementById('update');
